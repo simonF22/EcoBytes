@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "login" : "firebase login --no-localhost",
     "start": "cd public && live-server --port=8080"
   },
   "repository": {
