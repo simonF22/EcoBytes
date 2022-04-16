@@ -45,7 +45,7 @@ body {
 
 .Bytes{
   color: #0091ea;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script';
   font-weight: 500;
 }
 
@@ -108,7 +108,7 @@ body {
 
 .eco{
   color: #00c853;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script';
   font-weight: 500;
 }
 
