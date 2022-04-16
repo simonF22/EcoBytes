@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "login" : "firebase login --no-localhost",
-    "start": "cd public && live-server --port=8080"
+    "start": "cd public && live-server --port=8080",
+    "serve": "firebase serve",
+    "deploy": "firebase deploy"
   },
   "repository": {
     "type": "git",
