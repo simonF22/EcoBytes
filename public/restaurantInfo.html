@@ -6,7 +6,6 @@
     <title>Sign up with ecoBytes</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="style.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -51,7 +50,7 @@
             </div>
           </div>
           <label for="image" id="image-placeholder">Upload logo or photo of the restaurant</label></br></br>
-          <input id="submit" type="submit" value="List Restaurant" class="waves-effect waves-light btn-large accTypeBtn center-align animate" required/>
+          <button id="listRest" type="submit" class="waves-effect waves-light btn-large accTypeBtn center-align animate">LIST RESTAURANT</button>
       </form>
       </div>
       
@@ -61,11 +60,11 @@
     <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
     <script src="script.js"></script>
     <script type="module">
+      
       let timepicker;
       let instance; 
       document.addEventListener('DOMContentLoaded', function() {
-        timepicker = 
-          document.querySelector('.timepicker');
+        timepicker = document.querySelector('.timepicker');
         instance = M.Timepicker.init(timepicker);
       });
 
@@ -87,17 +86,19 @@
       	}
       });
 
-      timepicker.addEventListener("click", 
-          function() {
-            console.log("time");
-            openTimepicker();
-          });
-      
       function openTimepicker() {
         instance.open();
       }
-      
-      function listRestaurant() {
+
+      if (timepicker) {
+         timpicker.addEventListener('click', function() {
+            console.log("time");
+            openTimepicker();
+          });     
+      }
+
+      document.getElementById('listRest').addEventListener('click', (e) => {
+  
         let name = document.querySelector("#input-name").value;
         let street = document.querySelector("#input-street").value;
         let city = document.querySelector("#input-city").value;
@@ -164,7 +165,8 @@
             });
           }
         );
-      }
+      });
+      
       
     </script>
   </body>
