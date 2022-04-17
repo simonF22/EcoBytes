@@ -436,6 +436,12 @@ pre {
   position: relative;
 }
 
+#restName {
+  font-family: 'Kalam', cursive;
+  font-size: 1.6em;
+
+}
+
 #search {
   width: auto;
 }
