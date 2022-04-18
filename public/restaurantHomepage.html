@@ -14,24 +14,20 @@
   </head>
 
   <body style="background-color:#eceff1">
-    <nav>
-      <div style="font-size: 25px; padding: 0 20px" class="teal lighten-4 nav-wrapper">
-        <div class="brand-logo">
-          <span class="eco">eco</span><span class="Bytes">Bytes</span>
+    <nav id="homepage-nav" class="teal lighten-4 nav-wrapper" >
+        <div id="homepage-title">
         </div>
-      </div>
+        <div id="homepage-header"> 
+          <img src="#" id="homepage-img">
+        </div>
     </nav>
     </br>
-    <header id="homepage-header">
-      <h1 id="homepage-title"></h1>
-      <img src="#" id="homepage-img">
-    </header>
+
     <section id="btns-add-logout">
       <a class="waves-effect waves-light btn modal-trigger" id="add-listing" href="#modal1">
         <i class="material-icons right material-icons-white">add</i>
         Add Listing
       </a>
-      <button id="LogOutBtn" class="waves-effect waves-light btn blue-grey lighten-4 animate" style="color: black" type="button" name="LogOutBtn">LOG OUT</button>
     </section>
     
     <main id="homepage-main">
@@ -86,7 +82,12 @@
         </form>
       </div>
     </div>
-    
+
+    <footer id="homepage-footer" class="teal lighten-4 page-footer">
+    <div id="homepage-logout">
+     <button id="LogOutBtn" class="waves-effect waves-light btn blue-grey lighten-4 animate" type="button" name="LogOutBtn">LOG OUT</button>
+    </div>     
+    </footer>
 
     <script src="script.js"></script>
     <script type="module">

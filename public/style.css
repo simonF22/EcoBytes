@@ -147,27 +147,32 @@ body {
 }
 
 #homepage-header {
-  display: flex;
-/*   flex-flow: row nowrap; */
+  display: inline-block;
   justify-content: space-between;
   align-items: center;
-/*   gap: 20px; */
-/*   height: 8vh; */
-/*   padding-top: 10px; */
 }
 
 #homepage-title {
+  margin-top: 10px;
   margin-right: auto;
   margin-left: 20px;
-  font-size: 32px;
+  font-size: 40px;
+  display: inline-block;
+  font-family: 'Kalam', cursive;
+}
+
+#homepage-logout {
+  padding-bottom: 10px;
+  margin-left: 10px;
 }
 
 #homepage-img {
-  min-width: 70px;
-  min-height: 70px;
+  min-width: 85px;
+  min-height: 85px;
   max-width: 85px;
   max-height: 85px;
   width: 20%;
+  margin-top: 10px;
   margin-right: 20px;
   border-radius: 25%;
   border: 3px solid #2bbbad;
@@ -176,13 +181,6 @@ body {
 #homepage-main {
   display: flex;
   flex-wrap: wrap;
-/*   overflow-y: scroll;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "header header header";
-  gap: 20px 50px;
-  place-items: center;
-  place-content: center;   */
   padding: 0 10vw;
 }
 
@@ -192,6 +190,16 @@ body {
   flex-wrap: wrap;
   justify-content: space-evenly;
   position: relative;
+}
+
+#homepage-nav {
+  display: flex;
+  height: 15%;
+}
+
+#homepage-footer {
+  position: sticky;
+  height: 10%;
 }
 
 /* @media only screen and (max-width: 400px) {
@@ -328,6 +336,10 @@ img:hover {
   margin-right: auto;
 }
 
+#LogOutBtn {
+  color: black;
+  font-weight: 600;
+}
 
 .material-icons {
   color: black;
