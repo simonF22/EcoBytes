@@ -63,7 +63,7 @@ let html = '';
         <img src="${r.logo} alt="${r.name}" title="${r.name}">
       </div>
       <div class="card-content">
-        <h5>${r.name}</h5>
+        <h5 id="styleName">${r.name}</h5>
         <p><i class="tiny material-icons">local_dining</i>&nbsp Cuisine: ${r.cuisine}</p>
         <p><i class="tiny material-icons">pin_drop</i>&nbsp Address: ${r.address}, ${r.city}</p>
         <p><i class="tiny material-icons">access_time</i>&nbsp Closing Time: ${r.closing_time} </p>

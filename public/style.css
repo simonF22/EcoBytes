@@ -463,6 +463,10 @@ pre {
   margin-right: auto;
 }
 
+#styleName {
+  font-family: 'Kalam', cursive;
+}
+
 .two {
   grid-column: span 1;
   width: 24.9vw !important;
